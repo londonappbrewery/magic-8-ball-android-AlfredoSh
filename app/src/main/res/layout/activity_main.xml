@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,4 +10,39 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#26ade0">
+
+        <Button
+            android:id="@+id/perguntarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorPrimary"
+            android:text="Perguntar"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_oitoBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ball1" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:text="@string/texto"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 </RelativeLayout>
